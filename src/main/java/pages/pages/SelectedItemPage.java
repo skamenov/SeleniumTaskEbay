@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.base.BasePage;
 import utils.WaitTool;
+
 import java.util.List;
 import java.util.Set;
 
@@ -13,7 +14,7 @@ public class SelectedItemPage extends BasePage {
     private static final By ADD_TO_CART_BUTTON = By.xpath("//a[@id='atcBtn_btn_1']");
     private static final By SWITCH_VIEW_OPTION = By.cssSelector("#TABS_SPR > span");
     private static final By MONOPOLY_ITEM_TITLE = By.xpath("//div[@class='vim x-item-title']//span[1]");
-    public static final double EXPECTED_PRICE = 99.0;
+    public static final double EXPECTED_PRICE = 4.50;
     public static final double EXPECTED_PRICE_FOR_TWO_ITEMS = EXPECTED_PRICE * 2;
 
     public static void chooseQuantityAndAddToCart(String quantity) {
